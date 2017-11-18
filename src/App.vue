@@ -1,11 +1,13 @@
 <template>
     <div id = "app" class = "app">
         <div class="large-8 medium-8 large-offset-2 medium-offset-2 columns">
-            <h2>All Blogs Here</h2>
-            <div class="blogs" v-for="blog in blogs">
-                <div class="panel">
-                    <h4 v-rainbow>{{blog.title}}</h4>
-                    <p>{{blog.body}}</p>
+            <div class="all-blogs" v-theme:column="'wide'">
+                <h2>All Blogs Here</h2>
+                <div class="blogs" v-for="blog in blogs">
+                    <div class="panel">
+                        <h4 v-rainbow>{{blog.title}}</h4>
+                        <p>{{blog.body}}</p>
+                    </div>
                 </div>
             </div>
         </div>
