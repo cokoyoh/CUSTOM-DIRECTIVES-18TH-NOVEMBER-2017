@@ -4,7 +4,7 @@
             <h2>All Blogs Here</h2>
             <div class="blogs" v-for="blog in blogs">
                 <div class="panel">
-                    <h4>{{blog.title}}</h4>
+                    <h4 v-rainbow>{{blog.title}}</h4>
                     <p>{{blog.body}}</p>
                 </div>
             </div>
